@@ -5,27 +5,28 @@
 - You can now run the scripts according to your Operating System:
      - **For Windows**
 
-     ```
-    mkdir %1 
-    cd %1
-    pip install virtualenv
-    virtualenv env
+	```
+	mkdir %1 
+	cd %1
+	pip install virtualenv
+	virtualenv env
 
-    pip install django
-    django-admin startproject %1 .
-    cls
-    ```
+	pip install django
+	django-admin startproject %1 .
+	cls
+	```
      - **For Linux and macOS**
 
-```
-#!/env/sh
+	```
+	#!/env/sh
 
-mkdir $1
-cd $1
-pip install virtualenv
-virtualenv env
-source env\Scripts\activate.sh
-pip install django
-django-admin startproject $1 .
-clear
-```
+	mkdir $1
+	cd $1
+	pip install virtualenv
+	virtualenv env
+	source env\Scripts\activate.sh
+	
+	pip install django
+	django-admin startproject $1 .
+	clear
+	```
