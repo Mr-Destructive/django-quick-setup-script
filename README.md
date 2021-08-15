@@ -10,6 +10,7 @@
 	cd %1
 	pip install virtualenv
 	virtualenv env
+	call env\Scripts\activate
 
 	pip install django
 	django-admin startproject %1 .
@@ -18,15 +19,16 @@
      - **For Linux and macOS**
 
 	```
-	#!/env/sh
+	#!/usr/bin/env bash
 
 	mkdir $1
 	cd $1
 	pip install virtualenv
 	virtualenv env
-	source env\Scripts\activate.sh
-	
+	source env\bin\activate
+
 	pip install django
 	django-admin startproject $1 .
 	clear
 	```
+
